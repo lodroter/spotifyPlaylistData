@@ -1,4 +1,4 @@
-# spotifyPlaylistData
+# Spotify playlist data
 
 Python code for getting playlist data from any Spotify playlist. 
 
@@ -20,7 +20,7 @@ In settings of this app you can find ClientID and ClientSecret which you need to
 
 Once you've changed these 3 things you can run the code and the csv file will be created. 
 
-## possible data you can get
+## Possible data you can get
 
 - **ID**: Unique Spotify identifier for the track.
 - **Title**: The name of the track.
