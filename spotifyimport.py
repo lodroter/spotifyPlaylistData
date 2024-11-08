@@ -4,8 +4,8 @@ import json
 import base64
 
 # Spotify API credentials
-client_id = '7675769c79484f7289553ed3ec17427e'
-client_secret = 'ce19e5d1bca54156af3b657ed913e9a5'
+client_id = ''
+client_secret = ''
 
 # Encode credentials
 credentials = f"{client_id}:{client_secret}"
@@ -30,8 +30,7 @@ if not access_token:
     exit()
 
 # Get playlist items
-playlist_id = '5erJSy4v4m2LmTxsgwi8dy'
-#playlist_id = '5M4CVbcaiIivlDemL2D4ly'
+playlist_id = '5erJSy4v4m2LmTxsgwi8dy'#playlist_id = '5M4CVbcaiIivlDemL2D4ly'
 playlist_url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
 playlist_headers = {
     "Authorization": f"Bearer {access_token}"
@@ -80,15 +79,8 @@ track_info = []
 for item in all_tracks:
     if 'track' in item:
         track = item['track']
-        # print("Available data fields for each track:")
-        # for key in track:
-        #     print(key)
-        # Ensure 'artists' and 'name' keys exist in 'track'
         if 'artists' in track and 'name' in track:
             track_info.append({
-                #"artist": track['artists'][0]['name'],
-                #"title": track['name'],
-                #"preview_url": track.get('preview_url')  # Link to track snippet, might be None
                 "title": track.get("name"),  # Track title
                 "artist": [artist['name'] for artist in track.get("artists", [])],  # List of artist names
                 "album": track.get("album", {}).get("name"),  # Album name
