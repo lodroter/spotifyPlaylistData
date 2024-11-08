@@ -2,7 +2,7 @@
 
 Python code for getting playlist data from any Spotify playlist. 
 
-# Setup 
+## Setup 
 
 First you need to copy link to any spotify playlist like this 
 
@@ -20,15 +20,15 @@ In settings of this app you can find ClientID and ClientSecret which you need to
 
 Once you've changed these 3 things you can run the code and the csv file will be created. 
 
-# possible data you can get
+## possible data you can get
 
-ID: Unique Spotify identifier for the track.
-Title: The name of the track.
-Artists: List of artists involved in the track.
-Album: Information about the album the track belongs to.
-Release date: The release date of the album.
-Duration: Track length in milliseconds.
-Explicit flag: Whether the track is marked as explicit.
-Popularity: A measure of the track's popularity (0-100).
-Preview URL: URL to a short preview of the track.
-External URL: Direct URL to the track on Spotify.
+- **ID**: Unique Spotify identifier for the track.
+- **Title**: The name of the track.
+- **Artists**: List of artists involved in the track.
+- **Album**: Information about the album the track belongs to.
+- **Release date**: The release date of the album.
+- **Duration**: Track length in milliseconds.
+- **Explicit flag**: Whether the track is marked as explicit.
+- **Popularity**: A measure of the track's popularity (0-100).
+- **Preview URL**: URL to a short preview of the track.
+- **External URL**: Direct URL to the track on Spotify.
